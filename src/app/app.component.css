@@ -1,6 +1,18 @@
 p
 {
-  color: chartreuse;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
 }
-h1{color: rgb(230, 246, 248);}
+h1{
+  color: black;
+  font-size: 40px;
+}
+img{
+  max-width: 500px;
+}
+select{
+  font-size: 25px;
+  width: 400px;
+}
 

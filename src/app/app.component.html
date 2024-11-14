@@ -1,7 +1,22 @@
 
 <main class="main">
-    <h1>Hello {{ title }}</h1>
-    <p>Meine lieblings spieler sind Lionel Messi und Lamine Yamal ⚽</p>
+    <h1>Matteo's Lieblingsfussballer</h1>
+    <p>Hier sind alles meine Lieblingsspieler ⚽</p>
+    <select name="fussballer" (change)="onChange($event)">
+      <option value="Bitte wählen">Bitte wählen</option>
+      @for (fussballer of Fussballerliste; track fussballer) {
+        <option value="{{fussballer.Name}}">{{fussballer.Name}}</option>
+      }
+    </select>
+    @if (InfosAnzeigen) {
+    <div>
+      <p>Infos</p>
+      <p>Name: {{GewaehlterFussballer.Name}}<br>
+      Alter: {{GewaehlterFussballer.Alter}} Jahre<br>
+      Goals: {{GewaehlterFussballer.Goals}}</p>
+      <img src="{{GewaehlterFussballer.Bild}}">
+    </div>
+  }
 </main>
 
 
