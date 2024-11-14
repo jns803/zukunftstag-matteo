@@ -2,7 +2,10 @@
 
 body {
   display: flex; justify-content:center; align-items:center;
+  background-color: dimgray;
+  font-family:   gill sans, sans-serif;
 }
+
 
 .spacer {
   flex-grow: 1;
